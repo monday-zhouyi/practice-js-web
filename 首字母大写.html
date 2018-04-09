@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首字母变大写</title>
+</head>
+<body>
+<script>
+    //补充代码
+   
+    var p="all time is no time when it is past";
+    var newW="";
+    function upperCase(){
+        a=p.split(" ");
+        for(var i=0;i<a.length;i++){
+          newW+=a[i].charAt(0).toUpperCase()+a[i].substr(1)+" ";  
+        }
+        return newW;
+    }
+    document.write(p+"</br>");
+    document.write(upperCase());
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>string之大小写</title>
+</head>
+<body>
+<script>
+    var a="all time is no time when it is past";
+    function zzz() {
+        var b=a.split(" ");
+        var ok=[];
+        for (var i=0;i<b.length;i++){
+            ok[i]=b[i].charAt(0).toUpperCase()+b[i].substr(1);
+        }
+        return ok.join(" ");
+    }
+    document.write(a+"<br>");
+    document.write(zzz());
+</script>
+</body>
+</html>
